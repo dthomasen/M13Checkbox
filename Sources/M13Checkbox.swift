@@ -233,7 +233,6 @@ open class M13Checkbox: UIControl {
     
     override open func hitTest(_ point: CGPoint, with event: UIEvent?) -> UIView? {
         let frame = self.bounds.insetBy(dx: -20, dy: -20)
-        print("contains: \(frame.contains(point))")
         return frame.contains(point) ? self : nil
     }
     
